@@ -4,16 +4,9 @@ Lecture slides
 .. toctree::
    :maxdepth: 1
 
-   lecture0
-   lecture1
-   lecture2
-   lecture3
-   lecture4
-   .. workshop1
-   .. workshop2
-   .. workshop3
-   .. workshop4
-   .. workshop5
-
-
-    
+   Lecture00_Intro.rst
+   Lecture01_Seafloor.rst
+   Lecture02_Seafloor.rst
+   Lecture03_Seamounts.rst
+   Lecture04_Sealevel.rst
+   
