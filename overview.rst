@@ -1,24 +1,11 @@
-EOS408: Marine Geology
--------------------------
+EOS 408: Marine Geology
+==========================
+
+.. include:: Outline/text/course_description.tex
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Outline
-   :glob:
+   :maxdepth: 2
 
-   Outline/outline.rst
+   Course outline <Outline/outline.rst>
+   lectures
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Lectures
-   :glob:
-
-   Lectures/*
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Labs
-   :glob:
-
-   Labs/*
-   

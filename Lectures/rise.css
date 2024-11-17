@@ -1,0 +1,16 @@
+.photostrip {width:70%;
+  display:grid;
+    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; padding-left:0
+}
+
+.photostrip2 {width:80%;
+  display:grid;
+    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; padding-left:0
+}
+
+#strip {
+  object-fit: cover;justify-self:center;align-self:center;
+  width: 96%;
+  height: 96%;
+  border: 1px solid #555;
+}
