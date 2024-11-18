@@ -1,31 +1,31 @@
-1,Th,Sep,7,myblue,"Lecture 1","Course introduction"
-2,M,Sep,11,myblue,"Lecture 2","Sea-floor depth and heat flow"
-,Th,Sep,14,mygreen2,"Workshop 1","Writing for clarity"
-3,M,Sep,18,myblue,"Lecture 3","Sea-floor depth and heat flow"
-,Th,Sep,21,mygreen2,"Workshop 2","Concept maps"
-,F,Sep,22,mygreen,,"Review paper topic due"
-4,M,Sep,25,myred,,"\emph{cancelled in 2023 (Blake ill)}"
-,Th,Sep,28,myred,,"\emph{cancelled in 2023 (Blake ill)}"
-5,M,Oct,2,myred,,"\emph{National Day for Truth and Reconciliation}"
-,Th,Oct,5,mygreen2,"Workshop 3","The four questions"
-6,M,Oct,9,myred,,"\emph{Thanksgiving Day}"
-,Th,Oct,12,myblue,"Lecture 4","Hot spots and other seamounts"
-,F,Oct,13,mygreen,,"Review paper outlines due"
-7,M,Oct,16,myblue,"Lecture 5","Hot spots and other seamounts"
-,Th,Oct,19,mygreen2,"Workshop 4","Three paragraph feedback"
-8,M,Oct,23,myblue,"Lecture 6","Hot spots and other seamounts"
-,Th,Oct,27,mygreen2,"Workshop 5","Your review paper figures"
-,F,Oct,13,mygreen,,"Introduction draft due"
-9,M,Oct,30,myblue,"Lecture 7","Coastal geology exercise"
-,Th,Nov,2,mygreen2,"Workshop 6","Introductions exchange and feedback"
-10,M,Nov,6,myblue,"Lecture 8","Coastal geology exercise"
-,Th,Nov,9,mygreen2,"Workshop 7","Selections from main text exchange and feedback"
-11,M,Nov,13,myred,,"\emph{Remembrance Day, Reading Break}"
-,Th,Nov,16,myblue,"Lecture 9","Sea-level change"
-,F,Nov,17,mygreen,,"Review paper draft due"
-12,M,Nov,20,myblue,"Lecture 10","Sea-level change"
-,Th,Nov,23,myorange,,"Student presentations"
-13,M,Nov,27,myorange,,"Student presentations"
-,Th,Nov,30,myorange,,"Student presentations"
-14,M,Dec,4,myorange,,"Student presentations"
-,M,Dec,4,mygreen,,"Review paper revisions due"
+1,Th,Sep,7,myblue,Lecture 1,Course introduction
+2,M,Sep,11,myblue,Lecture 2,Sea-floor depth and heat flow
+,Th,Sep,14,mygreen2,Workshop 1,Writing for clarity
+3,M,Sep,18,myblue,Lecture 3,Sea-floor depth and heat flow
+,Th,Sep,21,mygreen2,Workshop 2,Concept maps
+,F,Sep,22,mygreen,,Review paper topic due
+4,M,Sep,25,myred,,\emph{cancelled in 2023 (Blake ill)}
+,Th,Sep,28,myred,,\emph{cancelled in 2023 (Blake ill)}
+5,M,Oct,2,myred,,\emph{National Day for Truth and Reconciliation}
+,Th,Oct,5,mygreen2,Workshop 3,The four questions
+6,M,Oct,9,myred,,\emph{Thanksgiving Day}
+,Th,Oct,12,myblue,Lecture 4,Hot spots and other seamounts
+,F,Oct,13,mygreen,,Review paper outlines due
+7,M,Oct,16,myblue,Lecture 5,Hot spots and other seamounts
+,Th,Oct,19,mygreen2,Workshop 4,Three paragraph feedback
+8,M,Oct,23,myblue,Lecture 6,Hot spots and other seamounts
+,Th,Oct,27,mygreen2,Workshop 5,Your review paper figures
+,F,Oct,13,mygreen,,Introduction draft due
+9,M,Oct,30,myblue,Lecture 7,Coastal geology exercise
+,Th,Nov,2,mygreen2,Workshop 6,Introductions exchange and feedback
+10,M,Nov,6,myblue,Lecture 8,Coastal geology exercise
+,Th,Nov,9,mygreen2,Workshop 7,Selections from main text exchange and feedback
+11,M,Nov,13,myred,,\emph{Remembrance Day, Reading Break}
+,Th,Nov,16,myblue,Lecture 9,Sea-level change
+,F,Nov,17,mygreen,,Review paper draft due
+12,M,Nov,20,myblue,Lecture 10,Sea-level change
+,Th,Nov,23,myorange,,Student presentations
+13,M,Nov,27,myorange,,Student presentations
+,Th,Nov,30,myorange,,Student presentations
+14,M,Dec,4,myorange,,Student presentations
+,M,Dec,4,mygreen,,Review paper revisions due
