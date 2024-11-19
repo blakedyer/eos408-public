@@ -7262,13 +7262,28 @@ a.anchor-link {
 .jp-Notebook {
     padding: 0;
 }
+
+.reveal img { max-height: calc(var(--slide-height) * 0.66); }
+.reveal .scroll-page img { max-height: calc(var(--default-slide-height) - (var(--r-block-margin) * 2)); }
+.reveal img.top { max-height: calc(var(--slide-height) * var(--top-img-height)); }
+.reveal .scroll-page img.top { max-height: calc(var(--default-slide-height) * var(--top-img-height)); }
+.reveal img.side { max-width: calc(var(--slide-width) * var(--side-img-width)); }
+
 :root {
     --jp-content-font-family: Open Sans, serif;
     --jp-ui-font-size1: 20px;       /* instead of 14px */
-    --jp-content-font-size1: 35px;  /* instead of 14px */
-    --jp-code-font-size: 19px;      /* instead of 13px */
-    --jp-cell-prompt-width: 110px;  /* instead of 64px */
+    --jp-content-font-size1: 30px;  /* instead of 14px */
+    --jp-code-font-size: 20px;      /* instead of 13px */
+    --jp-cell-prompt-width: 0px;  /* instead of 64px */
+    --default-slide-height: 1004px;
+    --top-img-height: 0.6;
+    --side-img-width: 0.5;
 }
+
+
+     
+      
+      
 @media print {
   body {
     margin: 0;
@@ -7472,7 +7487,7 @@ main {
 </ul>
 </div>
 <div class="clearpanel" style="visibility: visible;">
-<center><img alt="No description has been provided for this image" src="images/Tharp-Map-scaled-atlantic.jpg" style="height:59vh;display:block; margin:auto"/></center>
+<center><img alt="No description has been provided for this image" src="images/Tharp-Map-scaled-atlantic.jpg" style="height:60vh;display:block; margin:auto"/></center>
 </div>
 </div>
 </div>
@@ -7519,7 +7534,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Temperature-profile-of-Earth's-lithosphere-and-upper-asthenosphere-(sketch-first)">Temperature profile of Earth's lithosphere and upper asthenosphere <span style="color:dodgerblue">(sketch first)</span><a class="anchor-link" href="#Temperature-profile-of-Earth's-lithosphere-and-upper-asthenosphere-(sketch-first)">¶</a></h4><br/>
+<h4 id="Temperature-pr--ofile-of-Earth's-lithosphere-and-upper-asthenosphere-(sketch-first)">Temperature pr  ofile of Earth's lithosphere and upper asthenosphere <span style="color:dodgerblue">(sketch first)</span><a class="anchor-link" href="#Temperature-pr--ofile-of-Earth's-lithosphere-and-upper-asthenosphere-(sketch-first)">¶</a></h4><br/>
 </div>
 </div>
 </div>
@@ -8258,7 +8273,7 @@ $$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center><img alt="No description has been provided for this image" src="images/rt_parsons.png" style="height:80vh"/></center>
+<center><img alt="No description has been provided for this image" src="images/rt_parsons.png" style="height:60vh"/></center>
 </div>
 </div>
 </div>
@@ -8326,7 +8341,7 @@ How does this thermal instability effect plate (lithosphere) thicknesses?
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center><img alt="No description has been provided for this image" src="images/smith_sandwell_bathymetry.png" style="height:65vh"/></center>
+<center><img alt="No description has been provided for this image" src="images/smith_sandwell_bathymetry.png" style="height:60vh"/></center>
 </div>
 </div>
 </div>
@@ -8361,7 +8376,7 @@ How does this thermal instability effect plate (lithosphere) thicknesses?
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div data-id="columns" style="display:flex;height:60vh">
 <div class="clearpanel_start" style="visibility: visible;">
-<center><img alt="No description has been provided for this image" src="images/smith_sandwell_bathymetry.png" style="height:60vh"/></center>
+<center><img alt="No description has been provided for this image" src="images/smith_sandwell_bathymetry.png" style="max-height:60vh"/></center>
 </div>
 <div class="clearpanel" style="visibility: visible;">
 <span style="color:dodgerblue">How do we map the bathymetry of the sea-floor?</span>
@@ -8566,7 +8581,7 @@ $$</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div data-id="columns" style="display:flex;height:70vh">
 <div class="clearpanel_start" style="visibility: visible;">
-<center><img alt="No description has been provided for this image" src="images/smith_sandwell_bathymetry.png" style="height:60vh"/></center>
+<center><img alt="No description has been provided for this image" src="images/smith_sandwell_bathymetry.png" style="max-height:60vh"/></center>
 </div>
 <div class="clearpanel" style="visibility: visible;">
 <ul style="font-size:.9em">
@@ -8665,12 +8680,14 @@ require(
             controls: true,
             progress: true,
             history: true,
+            margin: 0.1,
             transition: "none",
+            navigationMode: 'linear',
             controlsLayout: 'edges',
             slideNumber: "",
             plugins: [RevealNotes],
-            width: 1920,
-			      height: 1060,
+            width: 1832,
+			      height: 1004,
 	    customcontrols: {
             controls: [
 			      { icon: '<i class="fa fa-pen-square"></i>',
