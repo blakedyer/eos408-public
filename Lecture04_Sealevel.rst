@@ -1,16 +1,14 @@
 Lectures 9-10: Sea-level
 =====================================================   
 
-Links for full screen web viewing
+Link for full screen web viewing
 ------------------------------------------
 Spacebar to advance, shift+spacebar to go backwards, escape for overview.
 
 `Lectures 9-10: Sea-level <../_static/Lecture04_Sealevel.slides.html>`_
 
 
-Links for PDF/printing
+PDF download
 ------------------------
 
-To generate a PDF, click the link then go to print-->save as PDF in your browser.
-
-`Lectures 9-10: Sea-level <../_static/Lecture04_Sealevel.slides.html?print-pdf>`_
+:download:`Lectures 9-10: Sea-level <Lectures/pdf_slides/Lecture04_Sealevel.pdf>`
