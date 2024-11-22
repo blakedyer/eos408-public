@@ -1,6 +1,10 @@
 Lecture slides
 ==========================
 
+.. attention::
+
+   Course last offered Fall 2023.
+
 .. toctree::
    :maxdepth: 1
 

@@ -1,6 +1,10 @@
 EOS 408: Marine Geology
 ==========================
 
+.. attention::
+
+   Course last offered Fall 2023.
+
 .. include:: Outline/text/course_description.tex
 
 .. toctree::

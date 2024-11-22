@@ -1,6 +1,10 @@
 Outline
 ====================
 
+.. attention::
+
+   Course last offered Fall 2023.
+
 :download:`Course Outline (pdf) <Outline.pdf>`
 
 
