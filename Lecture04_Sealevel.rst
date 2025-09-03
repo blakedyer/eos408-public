@@ -1,6 +1,8 @@
 Lectures 9-10: Sea-level
 =====================================================   
 
+.. include:: header.rst
+
 Link for full screen web viewing
 ------------------------------------------
 Spacebar to advance, shift+spacebar to go backwards, escape for overview.

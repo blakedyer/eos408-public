@@ -1,6 +1,8 @@
 Lecture 2: Sea-floor depth, age, and heat flow
 =====================================================   
 
+.. include:: header.rst
+
 Link for full screen web viewing
 ------------------------------------------
 Spacebar to advance, shift+spacebar to go backwards, escape for overview.

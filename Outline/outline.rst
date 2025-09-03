@@ -1,9 +1,7 @@
 Outline
 ====================
 
-.. attention::
-
-   Course last offered Fall 2023.
+.. include:: ../header.rst
 
 :download:`Course Outline (pdf) <Outline.pdf>`
 

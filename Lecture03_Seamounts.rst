@@ -1,6 +1,8 @@
 Lectures 4-6: Hot spots and seamounts
 =====================================================   
 
+.. include:: header.rst
+
 Link for full screen web viewing
 ------------------------------------------
 Spacebar to advance, shift+spacebar to go backwards, escape for overview.
