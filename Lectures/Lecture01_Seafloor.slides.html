@@ -7277,7 +7277,7 @@ a.anchor-link {
     --jp-content-font-family: Open Sans, serif;
     --jp-ui-font-size1: 20px;       /* instead of 14px */
     --jp-content-font-size1: 30px;  /* instead of 14px */
-    --jp-code-font-size: 20px;      /* instead of 13px */
+    --jp-code-font-size: 15px;      /* instead of 13px */
     --jp-cell-prompt-width: 0px;  /* instead of 64px */
     --default-slide-height: 1004px;
     --top-img-height: 0.6;
@@ -7498,19 +7498,6 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div style="font-size:25px"> <i>We acknowledge and respect the lək̓ʷəŋən peoples on whose traditional territory the university stands and the Songhees, Esquimalt and W̱SÁNEĆ peoples whose historical relationships with the land continue to this day.</i></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>A volunteer Notetaker is needed for this course.</p>
-<p>As a Notetaker, you will be asked to share accurate and timely lecture notes to support the needs of your peers who require equal access to academic programs.</p>
-<p>If you would like to volunteer to share your notes in this course, please e-mail me (blakedyer@uvic.ca). Thank you very much!</p>
 </div>
 </div>
 </div>
@@ -7823,7 +7810,7 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div style="height:70vh">
-<p>You should get <span style="color:FireBrick"><b>3.46 g/cm<sup>3</sup></b></span> (<span style="color:dodgerblue">density of peridotite: 3.1–3.4 g/cm<sup>3</sup></span>) using the following mass balance:</p>
+<p>The calculation is simplest if we assume compensation depth is the base of the continental crust (instead of the 40 km hypothetical posed by Hess). You should get <span style="color:FireBrick"><b>3.46 g/cm<sup>3</sup></b></span> (<span style="color:dodgerblue">density of peridotite: 3.1–3.4 g/cm<sup>3</sup></span>) using the following mass balance:</p>
 $$
 \mathrm{
 \Delta H_{cc}\rho_{cc} = \Delta H_{w}\rho_{w} + \Delta H_{oc}\rho_{oc} + \Delta H_m\rho_m \\
@@ -7839,182 +7826,50 @@ $$<p>where $\Delta H$ is thickness, $E$ is elevation, $\rho$ is density, and the
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-topography-of-the-sea-floor">The topography of the sea-floor<a class="anchor-link" href="#The-topography-of-the-sea-floor">¶</a></h3><br/>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">crust_thickness</span> <span class="o">=</span> <span class="mi">34</span>
+<span class="n">crust_elevation</span> <span class="o">=</span> <span class="mf">0.797</span>
+<span class="n">crust_density</span> <span class="o">=</span> <span class="mf">2.8</span>  <span class="c1"># kg/m^3</span>
+<span class="n">ocean_thickness</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">ocean_elevation</span> <span class="o">=</span> <span class="o">-</span><span class="mf">3.686</span>
+<span class="n">ocean_density</span> <span class="o">=</span> <span class="mf">2.9</span>  <span class="c1"># kg/m^3</span>
+<span class="n">water_density</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">water_thickness</span> <span class="o">=</span> <span class="mf">3.686</span>
+<span class="n">mantle_root</span> <span class="o">=</span> <span class="n">crust_thickness</span> <span class="o">-</span> <span class="n">ocean_thickness</span> <span class="o">-</span> <span class="p">(</span><span class="n">crust_elevation</span> <span class="o">-</span> <span class="n">ocean_elevation</span><span class="p">)</span>
+
+<span class="c1"># crust_thickness*crust_density = water_thickness*water_density + ocean_thickness*ocean_density + </span>
+<span class="c1">#                                                                           mantle_density*mantle_root</span>
+<span class="n">mantle_density</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">water_thickness</span> <span class="o">*</span> <span class="n">water_density</span>
+    <span class="o">+</span> <span class="n">crust_thickness</span> <span class="o">*</span> <span class="n">crust_density</span>
+    <span class="o">-</span> <span class="n">ocean_thickness</span> <span class="o">*</span> <span class="n">ocean_density</span>
+<span class="p">)</span> <span class="o">/</span> <span class="n">mantle_root</span>
+<span class="n">mantle_density</span>
+</pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div style="height:70vh"><center><img alt="No description has been provided for this image" src="images/global_topo_curves_cawood2022.png" style="height:69vh"/></center></div><br/>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-topography-of-the-sea-floor">The topography of the sea-floor<a class="anchor-link" href="#The-topography-of-the-sea-floor">¶</a></h3><br/>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>3.4649827784156138</pre>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div data-id="columns" style="display:flex;height:75vh">
-<div class="clearpanel_start" style="visibility: visible;">
-<center><img alt="No description has been provided for this image" src="images/Tharp-Map-scaled-pacific.jpg" style="height:75vh;display:block; margin:auto"/></center>
-</div>
-<div class="clearpanel" style="visibility: visible;">
-<center><img alt="No description has been provided for this image" src="images/Tharp-Map-scaled-atlantic.jpg" style="height:75vh;display:block; margin:auto"/></center>
-</div>
-</div>
-<br/>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-topography-of-the-sea-floor">The topography of the sea-floor<a class="anchor-link" href="#The-topography-of-the-sea-floor">¶</a></h3><br/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div style="height:70vh;color:dodgerblue"><center>
-    Consider at least two ways that the topography of the sea-floor (mid-ocean ridges and the increase in depth away from ridges) can be in isostatic equilibrium. Draw a sketch for both.
-</center></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-topography-of-the-sea-floor">The topography of the sea-floor<a class="anchor-link" href="#The-topography-of-the-sea-floor">¶</a></h3><br/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div style="height:70vh;color:dodgerblue">
-<center>
-     Consider at least two ways that the topography of the sea-floor (mid-ocean ridges and the increase in depth away from ridges) can be in isostatic equilibrium. Draw a sketch for both. <br/>
-<img alt="No description has been provided for this image" src="images/airy_pratt.webp" style="height:45vh"/><br/>
-    Which model is better at explaining sea-floor topography? Why?   
-    </center>
-</div>
-</div>
-</div>
-</div>
-</div><aside class="notes">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li>Heat flow highest at ridge (unlikely to be thicker crust)</li>
-<li>lowest density under the ridge somehow (thermal?)<ul>
-<li>how to make density go up with distance? cooling + transport (convection)</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</aside></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-topography-of-the-sea-floor">The topography of the sea-floor<a class="anchor-link" href="#The-topography-of-the-sea-floor">¶</a></h3><br/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div style="height:48.5vh">
-<span style="color:DarkGray"><i><b>"Nevertheless, mantle convection is considered a radical hypothesis not widely accepted by geologists and geophysicists. If it were accepted, a rather reasonable story could be constructed to describe the evolution of ocean basins and the waters within them. Whole realms of previously unrelated facts fall into a regular pattern, which suggests that close approach to satisfactory theory is being attained."</b></i></span>
-<span style="float:right"><b>-Harry Hess, <i>History of Ocean Basins</i>, 1962</b></span>
-</div>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center><span style="color:dodgerblue">What observations supported this radical hypothesis?</span></center>
-</div>
-</div>
-</div>
-</div><aside class="notes">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li>Heat flow highest at ridge (unlikely to be thicker crust)</li>
-<li>sed accumulation rates suggest seafloor significantly younger than 4ga</li>
-<li>continents have moved</li>
-<li>lower density, viscous layer that crustal plates ride across</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</aside></div></section></section>
+</div></section></section>
 </div>
 </div>
 </main>
@@ -8028,6 +7883,11 @@ $$<p>where $\Delta H$ is thickness, $E$ is elevation, $\rho$ is density, and the
 <!-- Chalkboard plugin -->
 <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
 <script>
 require(
     {
@@ -8051,7 +7911,7 @@ require(
             navigationMode: 'linear',
             controlsLayout: 'edges',
             slideNumber: "",
-            plugins: [RevealNotes],
+            plugins: [RevealNotes, RevealChalkboard, RevealCustomControls],
             width: 1832,
 			      height: 1004,
 	    customcontrols: {
@@ -8069,7 +7929,6 @@ require(
   chalkboard: {
     src: "http://carbonate.seos.uvic.ca:8000/chalkboard.json"
   },
-  plugins: [ RevealChalkboard, RevealCustomControls ],
   });
 
         var update = function(event){
