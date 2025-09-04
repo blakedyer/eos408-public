@@ -10,4 +10,5 @@ EOS 408: Marine Geology
 
    Course outline <Outline/outline.rst>
    lectures
+   readings
 
