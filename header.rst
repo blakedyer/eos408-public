@@ -1,3 +1,3 @@
 .. admonition:: Course is live
 
-   *Last updated 15 Sep 2025: 12:05 PM*
+   *Last updated 18 Sep 2025: 2:59 PM*
