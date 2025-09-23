@@ -9,6 +9,7 @@ Lecture slides
    Lecture00_Intro.rst
    Lecture01_Seafloor.rst
    Lecture03_Seafloor2.rst
+   Lecture04_Seafloor3.rst
 
 .. 
    Lecture02_Seafloor.rst
