@@ -11,6 +11,13 @@ Lecture slides
    Lecture03_Seafloor2.rst
    Lecture04_Seafloor3.rst
 
+Workshop slides
+==========================
+
+.. toctree::
+   :maxdepth: 1
+   
+   Workshop02_Fundamentals.rst
 .. 
    Lecture02_Seafloor.rst
    Lecture03_Seamounts.rst
