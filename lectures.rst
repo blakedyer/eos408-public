@@ -11,6 +11,7 @@ Lecture slides
    Lecture03_Seafloor2.rst
    Lecture04_Seafloor3.rst
    Lecture05_Plumes.rst
+   Lecture06_Plumes.rst
 
 Workshop slides
 ==========================
