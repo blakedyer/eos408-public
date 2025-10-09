@@ -20,6 +20,7 @@ Workshop slides
    :maxdepth: 1
    
    Workshop02_Fundamentals.rst
+   Workshop03_Openings.rst
 .. 
    Lecture02_Seafloor.rst
    Lecture03_Seamounts.rst

@@ -18,6 +18,14 @@
   color:var(--r-panel-color)
 }
 
+.split_panel {font-size:1em;text-align:left; width:49%;
+        display:inline-block;vertical-align:top}
+
+.split_panel p {
+  line-height: 1;margin:0em 
+}
+
+
 .panel_start {
   flex-grow: 1;
   background-color: var(--r-panel-color);
