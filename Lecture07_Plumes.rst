@@ -13,4 +13,4 @@ Spacebar to advance, shift+spacebar to go backwards, escape for overview.
 PDF download
 ------------------------
 
-:download:`Lecture 6: Hot spots, seamounts, and ridges <Lectures/pdf_slides/Lecture07_Plumes.pdf>`
+:download:`Lecture 7: Hot spots, seamounts, and ridges <Lectures/pdf_slides/Lecture07_Plumes.pdf>`
