@@ -22,6 +22,7 @@ Workshop slides
    
    Workshop02_Fundamentals.rst
    Workshop03_Openings.rst
+   Workshop04_Action.rst
 .. 
    Lecture02_Seafloor.rst
    Lecture03_Seamounts.rst
