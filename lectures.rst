@@ -13,6 +13,7 @@ Lecture slides
    Lecture05_Plumes.rst
    Lecture06_Plumes.rst
    Lecture07_Plumes.rst
+   Lecture08_Plumes.rst
 
 Workshop slides
 ==========================
