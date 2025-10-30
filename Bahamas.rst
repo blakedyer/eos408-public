@@ -120,13 +120,13 @@ Photographs and cross sections
 
           J
           
-     - .. figure:: ../../_static/images/CrookedIsland/J.jpg
+     - .. figure:: ../../_static/images/CrookedIsland/K.jpg
           :width: 100%
           :class: black-border
 
           K
           
-     - .. figure:: ../../_static/images/CrookedIsland/J.jpg
+     - .. figure:: ../../_static/images/CrookedIsland/L.jpg
           :width: 100%
           :class: black-border
 
