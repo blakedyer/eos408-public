@@ -24,6 +24,15 @@ Workshop slides
    Workshop02_Fundamentals.rst
    Workshop03_Openings.rst
    Workshop04_Action.rst
+
+In class activity
+==========================
+
+.. toctree::
+   :maxdepth: 1
+
+   Sealevel_Activity.rst
+
 .. 
    Lecture02_Seafloor.rst
    Lecture03_Seamounts.rst
