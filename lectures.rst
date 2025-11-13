@@ -24,6 +24,7 @@ Workshop slides
    Workshop02_Fundamentals.rst
    Workshop03_Openings.rst
    Workshop04_Action.rst
+   Workshop05_Flow.rst
 
 In class activity
 ==========================
