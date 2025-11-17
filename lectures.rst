@@ -14,6 +14,8 @@ Lecture slides
    Lecture06_Plumes.rst
    Lecture07_Plumes.rst
    Lecture08_Plumes.rst
+   Lecture09_CoastalWrapup.rst
+   Lecture10_SeaLevel.rst
 
 Workshop slides
 ==========================
