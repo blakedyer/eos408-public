@@ -1,3 +1,3 @@
 .. attention::
 
-   Course completed offered Fall 2025.
+   Course last offered Fall 2025.
