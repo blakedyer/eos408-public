@@ -1,3 +1,3 @@
-.. admonition:: Course is live
+.. attention::
 
-   *Last updated 17 Nov 2025: 12:26 PM*
+   Course completed offered Fall 2025.
