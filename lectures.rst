@@ -40,4 +40,3 @@ In class activity
    Lecture02_Seafloor.rst
    Lecture03_Seamounts.rst
    Lecture04_Sealevel.rst
-
